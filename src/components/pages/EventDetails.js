@@ -42,7 +42,7 @@ class EventDetails extends Component {
                                                     <li><strong>When: 16-17th August 2019</strong></li>
                                                     <li><strong>Where: The Old Woolstore, Hobart</strong></li>
                                                     <li><strong>Speakers: John Woodhouse and Mikey Lynch</strong></li>
-                                                    <li><strong><a href="https://vision100.org/challengeregistration" target="_blank" rel="noreferrer noopener">Register here</a> for Challenge Conference 2019, or you can purchase a <a href="https://vision100.org/node/647" target="_blank" rel="noreferrer noopener">'Golden Ticket'.</a> This includes a registration to both MTS training days, Challenge Conference and the Tasmanian Church Planting Conference.</strong></li>
+                                                    <li><strong><a href="https://vision100.org/challengeregistration" target="_blank" rel="noreferrer noopener">Register here</a> for Challenge Conference 2019.</strong></li>
                                                 </ul>
 
                                                 <p><strong>More information</strong></p>

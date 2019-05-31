@@ -166,10 +166,10 @@ class ContactUs extends Component {
 
 
 
-                <div className="content">
+                {/*<div className="content">
                   {!this.state.formSubmitted ? contactForm : messageSent}
 
-                </div>
+    </div>*/}
               </div>
             </div> {/* /main-content-region */}
 

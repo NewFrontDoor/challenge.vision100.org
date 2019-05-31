@@ -40,7 +40,7 @@ class AccomodationChildCare extends Component {
                                                     <p>If you are travelling from outside of Hobart and need help organising accommodation, please don't hesitate to email our Event Manager, Jess Prins at <a href="mailto:eventmanager@vision100.org">eventmanager@vision100.org</a></p>
 
                                                     <h3>Child Care:</h3>
-                                                    <p>We will not be offering on site child care, however please check with your local church minister as they may be able to help you with child care options. You are welcome to bring babies along to the conference.</p>
+                                                    <p>We will not be offering on site child care, however please email <a href="mailto:jess@vision100.org">jess@vision100.org</a> if you require child care, as we may be able to help you with child care options. You are welcome to bring babies along to the conference.</p>
                                                 </div>
 
 

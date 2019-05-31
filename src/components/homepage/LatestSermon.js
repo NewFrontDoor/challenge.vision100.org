@@ -26,7 +26,7 @@ class LatestSermon extends Component {
 
     if (!this.state.latestSermon) {
       //var sermonDetails = <div>Loading, please wait.</div>
-      var sermonDetails = <div>Currently unavailable.</div>
+      var sermonDetails = <div>Comming soon</div>
     }
     else {
       var sermonDetails = _.map(this.state.latestSermon, (sermon) => {

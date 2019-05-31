@@ -19,6 +19,7 @@ import AccomodationChildCare from './pages/MoreInformation/AccomodationChildCare
 import Interviews from './pages/MoreInformation/Interviews';
 import MinistryNetwork from './pages/MoreInformation/MinistryNetwork';
 import Register from './pages/Register';
+import SermonPlaceholder from './pages/SermonPlaceholder';
 
 
 class OtherPageWrapper extends Component {
@@ -27,7 +28,7 @@ class OtherPageWrapper extends Component {
       <section>
         <Switch>
           <Route exact path="/AllSermons" component={AllSermons} />
-          <Route exact path="/Sermons" component={Sermons} />
+          <Route exact path="/Sermons" component={SermonPlaceholder} />
           <Route exact path="/sermon/:nid" component={SermonPage} />
           <Route exact path="/sermon/:nid/:title" component={SermonPage} />
           <Route exact path="/series/:nid" component={SermonSeriesPage} />

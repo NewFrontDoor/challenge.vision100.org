@@ -84,7 +84,7 @@ class Sermons extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Sermons</h1>
+                  <h1 className="header-theme">Sermons</h1>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ class Sermons extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Resources</span>
+                    <span title="" className="nolink">Sermons</span>
                   </div>
                 </div>
               </div>

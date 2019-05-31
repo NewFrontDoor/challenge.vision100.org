@@ -76,7 +76,7 @@ class Navigation extends Component {
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Interviews" >Interviews</a>
+                                          <a href="/Interviews" >One to One Ministry Conversations</a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">

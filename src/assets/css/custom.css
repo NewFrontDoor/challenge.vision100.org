@@ -147,4 +147,23 @@ body{
 }*/
 
 
+.header-theme{
+  color: #ef3b24;
+  text-transform: uppercase;
+  font-family: 'Cabin', sans-serif;
+}
+
+.tb-megamenu-submenu .tb-megamenu-block .block{
+  background: #ef3b24;
+}
+
+.tb-megamenu{
+  font-family: 'Cabin', sans-serif;
+  color: #333
+}
+
+.tb-megamenu .nav > li > a:focus, .tb-megamenu .nav > li > a:hover, .tb-megamenu .dropdown-menu li > a:hover, .tb-megamenu .dropdown-menu li > a:focus, .tb-megamenu .dropdown-submenu:hover > a, .tb-megamenu .nav li.dropdown.open > .dropdown-toggle{
+ color: #ef3b24 !important;
+}
+
 

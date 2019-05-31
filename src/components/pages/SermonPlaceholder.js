@@ -1,7 +1,14 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 
-class Register extends Component {
+import _ from 'lodash'
+import { decode } from 'he'
+import { getFromDrupalAPI } from '../../utils/fetchJSON';
+
+const SERMON_LIMIT = 1;
+
+class SermonPlaceholder extends Component {
+
     render() {
         return (
             <section>
@@ -10,7 +17,7 @@ class Register extends Component {
                         <div className="row">
                             <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                                 <div id="page-title-block" className="page-title block">
-                                    <h1>Register</h1>
+                                    <h1>Sermons</h1>
                                 </div>
                             </div>
 
@@ -18,6 +25,8 @@ class Register extends Component {
                                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                                     <div className="breadcrumbs">
                                         <a href="/">Home</a>
+                                        <span className="delimiter">›</span>
+                                        <span title="" className="nolink">Sermons</span>
                                     </div>
                                 </div>
                             </div>
@@ -27,37 +36,28 @@ class Register extends Component {
                 <div id="content-region">
                     <div className="container">
                         <div className="row">
+
+
                             <div id="main-content-region" className="main-content col-xs-12">
+
                                 <div className="region region-content">
+
                                     <div id="block-system-main" className="block block-system">
+
+
                                         <div className="content">
-                                            <div className="node node-page clearfix">
-                                                <div className="content">
 
-                                                    <strong><a href="https://vision100.org/challengeregistration" target="_blank" rel="noreferrer noopener">Register here</a> for Challenge Conference 2019.</strong>
-
-                                                </div>
-
-
-
-                                            </div>
+                                            Coming soon.
                                         </div>
                                     </div>
                                 </div>
-
-
-
                             </div>
-
-
-
-
                         </div>
                     </div>
-                </div>
+                </div >
             </section >
         );
     }
 }
 
-export default Register;
+export default SermonPlaceholder;
