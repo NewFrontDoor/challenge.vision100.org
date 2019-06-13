@@ -48,10 +48,10 @@ class EventDetails extends Component {
                                                 <p><strong>More information</strong></p>
 
                                                 <ul>
-                                                    <li><a href="">Accommodation and Child Care</a></li>
-                                                    <li><a href="">Register</a></li>
-                                                    <li><a href="">Interviews</a></li>
-                                                    <li><a href="">Ministry Network, Sharing and Evaluating</a></li>
+                                                    <li><a href="/AccomodationChildCare">Accommodation and Child Care</a></li>
+                                                    <li><a href="/Register">Register</a></li>
+                                                    <li><a href="/Interviews">Interviews</a></li>
+                                                    <li><a href="/MinistryNetwork">Ministry Network, Sharing and Evaluating</a></li>
                                                 </ul>
                                             </div>
 
