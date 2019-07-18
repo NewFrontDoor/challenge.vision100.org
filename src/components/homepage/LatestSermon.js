@@ -15,18 +15,18 @@ class LatestSermon extends Component {
   }
 
   componentWillMount() {
-    var that = this;
+    {/*var that = this;
 
     getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
       that.setState({ latestSermon: data });
-    });
+    });*/}
 
   }
   render() {
 
     if (!this.state.latestSermon) {
-      //var sermonDetails = <div>Loading, please wait.</div>
-      var sermonDetails = <div>Comming soon</div>
+      //var sermonDetails = <i className="fa fa-spinner"></i>
+      var sermonDetails = <div>Currently unavailable.</div>
     }
     else {
       var sermonDetails = _.map(this.state.latestSermon, (sermon) => {
@@ -71,7 +71,8 @@ class LatestSermon extends Component {
         <div className="col-md-4 col-xs-12">  <div className="region region-content-2-1">
           <div className="block block-views">
             <h2 className="header-lightBlue">Latest Sermon</h2>
-            {sermonDetails}
+            {/*{sermonDetails}*/}
+            Currently unavailable.
           </div>
         </div>
         </div>

@@ -1,7 +1,25 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import _ from 'lodash';
+import { getPageFromDrupal } from '../../../utils/fetchJSON';
 
-class MinistryNetwork extends Component {
+class MinistryNewtork extends Component {
+    constructor() {
+        super();
+        this.state = {
+            page: null,
+            breadcrumbs: `<a href="/">Home</a>
+          <span className="delimiter">›</span>
+          <span title="" className="nolink">More Information</span>`
+        }
+    }
+
+    componentWillMount() {
+        var that = this;
+        getPageFromDrupal('MinistryNetworkChallenge', function (data) {
+            that.setState({ page: data[0] });
+        });
+    }
     render() {
         return (
             <section>
@@ -10,16 +28,16 @@ class MinistryNetwork extends Component {
                         <div className="row">
                             <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                                 <div id="page-title-block" className="page-title block">
-                                    <h1>Ministry Network, Sharing and Evaluating</h1>
+                                    <h1>
+                                        {this.state.page ? <span dangerouslySetInnerHTML={{ __html: this.state.page.title }} /> : ""}
+                                    </h1>
                                 </div>
                             </div>
 
                             <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
                                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                                     <div className="breadcrumbs">
-                                        <a href="/">Home</a>
-                                        <span className="delimiter">›</span>
-                                        <span title="" className="nolink">More Information</span>
+                                        {this.state.breadcrumbs ? <section dangerouslySetInnerHTML={{ __html: this.state.breadcrumbs }} /> : ""}
                                     </div>
                                 </div>
                             </div>
@@ -35,8 +53,7 @@ class MinistryNetwork extends Component {
                                         <div className="content">
                                             <div className="node node-page clearfix">
                                                 <div className="content">
-
-                                                    <p>This is a time where you will join with others who serve in like ministries from across denominations and across the state - lead in youth? Music? Welcoming? On Parish Council? Elder? Evangelism Team? Whatever area it maybe you will be able to share what you do, how and why with others so as to exchange practices, trade ideas, theological reflections and encourage each others in the joys and trials of your main ministry.</p>
+                                                    {this.state.page ? <section dangerouslySetInnerHTML={{ __html: this.state.page.content }} /> : <h2><i className="fa fa-spinner"></i></h2>}
                                                 </div>
 
 
@@ -61,4 +78,4 @@ class MinistryNetwork extends Component {
     }
 }
 
-export default MinistryNetwork;
+export default MinistryNewtork;
