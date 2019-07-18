@@ -20,6 +20,7 @@ import Interviews from './pages/MoreInformation/Interviews';
 import MinistryNetwork from './pages/MoreInformation/MinistryNetwork';
 import Register from './pages/Register';
 import SermonPlaceholder from './pages/SermonPlaceholder';
+import WhatsHappening from './pages/MoreInformation/WhatsHappening';
 
 
 class OtherPageWrapper extends Component {
@@ -42,6 +43,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/AccomodationChildCare" component={AccomodationChildCare} />
           <Route exact path="/Interviews" component={Interviews} />
           <Route exact path="/MinistryNetwork" component={MinistryNetwork} />
+          <Route exact path="/WhatWillBeHappening" component={WhatsHappening} />
 
           <Route exact path="/Register" component={Register} />
 
