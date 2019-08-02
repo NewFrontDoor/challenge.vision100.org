@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import logo from '../assets/img/logo.png';
-
+//import logo from '../assets/img/logo.png';
+import NavLogo from '../assets/img/Challenge Nav Logo.svg';
 class Navigation extends Component {
   render() {
     return (
@@ -10,9 +10,8 @@ class Navigation extends Component {
           <div className="row">
 
             <div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
-              <a href="/"><img src={logo} alt="Home" className="logo" /></a>
+              <a href="/"><img src={NavLogo} alt="Home" className="logo" /></a>
             </div> {/* /logo-region */}
-
             <div id="menu-region" className="col-xs-12 col-md-9">
               <div className="region region-header">
 
