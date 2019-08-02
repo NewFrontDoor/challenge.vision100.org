@@ -19,15 +19,17 @@ class SermonPage extends Component {
 
   componentWillMount() {
     var that = this;
-    getFromDrupalAPI('all_sermons_api?filters[nid]=' + this.state.sermonID, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?filters[nid]=' + this.state.sermonID, function (data) {
       that.setState({ sermon: data })
     });
   }
 
 
   render() {
-    var sermonTitle = "Sermon Title";
     if (this.state.sermon) {
+      var sermonTitle = "";
+      var seriesTitle = "";
+      var seriesID = "";
       if (this.state.sermon.length > 0) {
         var sermonDetails = _.map(this.state.sermon, (sermon) => {
           var sermonImg;
@@ -38,6 +40,11 @@ class SermonPage extends Component {
             sermonImg = sermon.series_full_img ? sermon.series_full_img : sermon.series_img
           }
           sermonTitle = decode(sermon.node_title);
+          seriesTitle = sermon.sermonseries ? decode(sermon.sermonseries) : "No Series";
+
+          if (sermon.series_id !== null) {
+            seriesID = sermon.series_id;
+          }
           return (
             <section key={_.uniqueId()}>
               <div className="content">
@@ -75,7 +82,7 @@ class SermonPage extends Component {
               <br /><div className="field field-name-field-sermon-series field-type-node-reference field-label-above">
                 <div className="field-label">Sermon Series:&nbsp;</div>
                 <div className="field-items">
-                  <div className="field-item even">{sermon.sermonseries ? <a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a> : ""}</div>
+                  <div className="field-item even">{sermon.sermonseries ? <a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a> : "Not part of a series"}</div>
                 </div>
               </div>
               <br /><div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">
@@ -114,7 +121,12 @@ class SermonPage extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Resources</span>
+                    <a href="/Sermons">Sermons</a>
+
+                    {sermonTitle ? (<span><span className="delimiter">›</span>
+                      <span title="" className="nolink">{seriesTitle !== "No Series" ? (<a href={`/series/${seriesID}`}>{seriesTitle}</a>) : 'Not part of a Series'}</span>
+                      <span className="delimiter">›</span>
+                      <span title="" className="nolink">{sermonTitle ? sermonTitle : ''}</span></span>) : ''}
                   </div>
                 </div>
               </div>

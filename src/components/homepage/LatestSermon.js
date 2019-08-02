@@ -15,11 +15,11 @@ class LatestSermon extends Component {
   }
 
   componentWillMount() {
-    {/*var that = this;
+    var that = this;
 
-    getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
+    getFromDrupalAPI('random_past_challenge_talk_api', function (data) {
       that.setState({ latestSermon: data });
-    });*/}
+    });
 
   }
   render() {
@@ -70,9 +70,8 @@ class LatestSermon extends Component {
       <section>
         <div className="col-md-4 col-xs-12">  <div className="region region-content-2-1">
           <div className="block block-views">
-            <h2 className="header-lightBlue">Latest Sermon</h2>
-            {/*{sermonDetails}*/}
-            Currently unavailable.
+            <h2 className="header-lightBlue">Past Sermon</h2>
+            {sermonDetails}
           </div>
         </div>
         </div>

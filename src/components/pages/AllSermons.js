@@ -40,16 +40,16 @@ class Sermons extends Component {
   componentWillMount() {
     var that = this;
 
-    getFromDrupalAPI('all_sermon_series_api', function (data) {
+    getFromDrupalAPI('all_challenge_sermon_series_api', function (data) {
       that.setState({ sermonSeries: data });
     });
 
-    getFromDrupalAPI('all_sermons_api?limit=' + PER_PAGE, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?limit=' + PER_PAGE, function (data) {
       that.setState({ sermons: data, loadingSermons: false });
     });
 
     //get count of total sermons for pages
-    getFromDrupalAPI('all_sermons_api', function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api', function (data) {
       var pages = Math.floor(data.length / PER_PAGE) + 1;
       that.setState({ totalSermons: data.length, sermonPages: pages });
     });
@@ -59,7 +59,7 @@ class Sermons extends Component {
     var that = this;
     var offset = (page + 1) * PER_PAGE
     this.setState({ sermons: null, page: page + 1 })
-    getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
       that.setState({ sermons: data, viewingRefinedList: false })
     });
 
@@ -72,7 +72,7 @@ class Sermons extends Component {
       this.setState({ sermonsRemaining: false });
     }
     this.setState({ page: page + 1 })
-    getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
       that.setState({ sermons: [...that.state.sermons, ...data], viewingRefinedList: false, loadingSermons: false })
     });
 
@@ -88,7 +88,7 @@ class Sermons extends Component {
     }
 
     this.setState({ sermons: null, page: page - 1 })
-    getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
       that.setState({ sermons: data, viewingRefinedList: false })
     });
 
@@ -112,7 +112,7 @@ class Sermons extends Component {
     if ($("#sermonSelect").val() === "" && this.state.viewingRefinedList === true) {
       that.loadPreviousSermons(1);
     }
-    getFromDrupalAPI('all_sermons_api?filters[sermonSeries]=' + sermonSeriesNid, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?filters[sermonSeries]=' + sermonSeriesNid, function (data) {
       that.setState({ sermons: data, viewingRefinedList: true })
     });
   }
@@ -140,8 +140,7 @@ class Sermons extends Component {
 
   render() {
     if (!this.state.sermons) {
-      //var sermons = <tr><td>Loading, please wait.</td></tr>;
-      var sermons = <tr><td>Currently unavailable.</td></tr>;
+      var sermons = <tr><td>Loading, please wait.</td></tr>;
     }
     else {
       var tdPadding = { padding: "0px 5px 0px 5px" };

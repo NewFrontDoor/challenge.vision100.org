@@ -27,7 +27,7 @@ class SermonSeriesPage extends Component {
 
     componentWillMount() {
         var that = this;
-        getFromDrupalAPI('all_sermons_api?filters[sermonSeries]=' + this.state.sermonSeriesID, function (data) {
+        getFromDrupalAPI('all_challenge_sermons_api?filters[sermonSeries]=' + this.state.sermonSeriesID, function (data) {
             that.setState({ sermons: data, seriesImgThumb: data[0].series_img, seriesImgFull: data[0].series_full_img })
         });
     }
@@ -44,7 +44,7 @@ class SermonSeriesPage extends Component {
                 var sermons = _.map(this.state.sermons, (sermon) => {
                     return (
                         <tr key={_.uniqueId()} className="odd even">
-                            {sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{ __html: sermon.node_url }} /> : <td style={tdPadding}></td>}
+                            {sermon.node_title ? <td style={tdPadding}><a href={'/sermon/' + sermon.nid}>{decode(sermon.node_title)}</a></td> : <td style={tdPadding}></td>}
 
 
                             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
@@ -79,7 +79,9 @@ class SermonSeriesPage extends Component {
                                     <div className="breadcrumbs">
                                         <a href="/">Home</a>
                                         <span className="delimiter">›</span>
-                                        <span title="" className="nolink">Resources</span>
+                                        <a href="/Sermons">Sermons</a>
+                                        <span className="delimiter">›</span>
+                                        <span title="" className="nolink">{seriesTitle ? seriesTitle : ''}</span>
                                     </div>
                                 </div>
                             </div>

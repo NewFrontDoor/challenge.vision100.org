@@ -20,12 +20,12 @@ class Sermons extends Component {
   componentWillMount() {
     var that = this;
 
-    getFromDrupalAPI('all_sermons_api?limit=' + SERMON_LIMIT, function (data) {
+    getFromDrupalAPI('all_challenge_sermons_api?limit=' + SERMON_LIMIT, function (data) {
       that.setState({ sermons: data });
       that.setState({ latestSermon: data[0] });
     });
 
-    getFromDrupalAPI('recent_series_api', function (data) {
+    getFromDrupalAPI('recent_challenge_series_api', function (data) {
       that.setState({ recentSeries: data });
     });
 
@@ -120,7 +120,7 @@ class Sermons extends Component {
 
                         <div className="content">
                           <div className="field field-name-body field-type-text-with-summary field-label-hidden"><div className="field-items"><div className="field-item even">
-                            <p>Here you'll find all the latest talks and current sermon series we're doing at -Church Name=. Feel free to browse around and check out the different talks.
+                            <p>Here you'll find the talks from past Challenge Conferences. Feel free to browse around and check out the different talks.
                             </p>
                             <p>If you're after something specific, and can't find it here, then please <a href="/allsermons">click here</a> and you'll be able to search through all of our recorded sermons.</p></div></div></div>  </div>
 
@@ -166,7 +166,7 @@ class Sermons extends Component {
 
                 <div id="block-views-sermon-series-block" className="block block-views">
 
-                  <h2>Current Series</h2>
+                  <h2>Latest Series</h2>
 
                   <div className="content">
                     <div className="view view-sermon-series view-id-sermon_series view-display-id-block featured-sermon view-dom-id-f76384e2578054bee9a594ea133e2b10">
@@ -250,7 +250,7 @@ class Sermons extends Component {
 
               <div id="block-views-sermon-series-block-1" className="block block-views">
 
-                <h2 className="header-lightBlue text-center-sm">Recent Series</h2>
+                <h2 className="header-lightBlue text-center-sm">Past Conferences</h2>
 
                 <div className="content">
                   <div className="view view-sermon-series view-id-sermon_series view-display-id-block_1 row">
