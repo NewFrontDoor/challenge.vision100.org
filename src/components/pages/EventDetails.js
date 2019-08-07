@@ -10,7 +10,7 @@ class EventDetails extends Component {
             page: null,
             breadcrumbs: `<a href="/">Home</a>
           <span className="delimiter">›</span>
-          <span title="" className="nolink">About</span>`
+          <span title="" className="nolink">Event Details</span>`
         }
     }
 
