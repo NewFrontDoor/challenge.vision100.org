@@ -82,7 +82,7 @@ class Navigation extends Component {
                                           <a href="/MinistryNetwork" >Ministry Network, Sharing and Evaluating</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/WhatWillBeHappening" >Talks, Seminars and Electives Information</a>
+                                          <a href="/WhatWillBeHappening" >Timetable</a>
                                         </li>
                                       </ul>
                                     </div>
