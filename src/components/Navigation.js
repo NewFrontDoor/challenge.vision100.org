@@ -41,7 +41,7 @@ class Navigation extends Component {
                           </li>
 
 
-
+                          {/* 
                           <li className="tb-megamenu-item level-1 mega dropdown">
                             <a href="javascript:void(0);" className="dropdown-toggle" title="Visit Us">
 
@@ -91,13 +91,13 @@ class Navigation extends Component {
                               </div>
                             </div>
                           </li>
-
+                          */}
                           <li className="tb-megamenu-item level-1 mega">
                             <a href="/Sermons" >Sermons</a>
                           </li>
-                          <li className="tb-megamenu-item level-1 mega">
+                          {/*<li className="tb-megamenu-item level-1 mega">
                             <a href="/Register" >Register</a>
-                          </li>
+                          </li>*/}
 
                           <li className="tb-megamenu-item level-1 mega">
                             <a href="/Contact" title="Contact Us">Contact Us</a>
