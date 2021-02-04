@@ -21,6 +21,7 @@ import MinistryNetwork from './pages/MoreInformation/MinistryNetwork';
 import Register from './pages/Register';
 import SermonPlaceholder from './pages/SermonPlaceholder';
 import WhatsHappening from './pages/MoreInformation/WhatsHappening';
+import GenericAPIPage from './pages/GenericAPIPage'
 
 
 class OtherPageWrapper extends Component {
@@ -46,8 +47,8 @@ class OtherPageWrapper extends Component {
           <Route exact path="/WhatWillBeHappening" component={WhatsHappening} />
 
           <Route exact path="/Register" component={Register} />
+          <Route exact path="/:slug" component={GenericAPIPage} />
 
-          <Route path="/*" component={OtherPageContent} />
         </Switch>
       </section>
     );
