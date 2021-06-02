@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
-
+import defaultSermonImg from '../../assets/img/sermonSeriesImage.jpg';
 import { getFromDrupalAPI } from '../../utils/fetchJSON';
 
 import '../../assets/css/audioplayer.css'
@@ -30,6 +30,7 @@ class LatestSermon extends Component {
     }
     else {
       var sermonDetails = _.map(this.state.latestSermon, (sermon) => {
+        var sermonImg = sermon.sermon_img ? sermon.sermon_img : sermon.series_img;
         return (
           <div key={_.uniqueId()} className="content">
             <div className="view view-latest-sermon view-id-latest_sermon view-display-id-block view-dom-id-78390e62fd38513a05d7e159bfdf897a">
@@ -38,7 +39,7 @@ class LatestSermon extends Component {
 
                   <div className="views-field views-field-field-front-page-thumbnail">
                     <div className="field-content">
-                      <img className="latestSermon-img" src={sermon.sermon_img ? sermon.sermon_img : sermon.series_img} width="600" height="450" />
+                      <img className="latestSermon-img" src={sermonImg ? sermonImg : defaultSermonImg} width="600" height="450" />
                     </div>
                   </div>
 

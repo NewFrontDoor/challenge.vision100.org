@@ -13,9 +13,9 @@ class WhereToFindUs extends Component {
               <h2 >Location</h2>
               <div className="content">
                 <GoogleMap id="map_canvas" height="360px" />
-                <div><a href="https://goo.gl/maps/Y42NrzGCPU92" target="_blank" rel="noopener noreferrer">The Old Woolstore</a></div>
-                <div>1 Macquarie Street</div>
-                <div>Hobart, Tasmania 7000</div>  </div>
+                <div><a href="https://goo.gl/maps/k6ujLwrrA47VGugK7" target="_blank" rel="noopener noreferrer">Wellspring Anglican Church</a></div>
+                <div>43-47 Grosvenor St</div>
+                <div>Sandy Bay, Tasmania 7005</div>  </div>
             </div>
           </div>
         </div>
