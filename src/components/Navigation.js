@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 //import logo from '../assets/img/logo.png';
-import NavLogo from '../assets/img/Challenge Nav Logo.svg';
+import NavLogo from '../assets/img/Challenge Nav Logo w date.svg';
 class Navigation extends Component {
   render() {
     return (
@@ -93,7 +93,7 @@ class Navigation extends Component {
                           </li>
                           */}
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/Sermons" >Sermons</a>
+                            <a href="https://vision100.brushfire.com/challenge/494592" rel="noopener noreferrer" target="_blank">Register Here</a>
                           </li>
                           {/*<li className="tb-megamenu-item level-1 mega">
                             <a href="/Register" >Register</a>

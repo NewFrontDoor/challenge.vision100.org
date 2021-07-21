@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import LatestSermon from './LatestSermon';
 import WhereToFindUs from './WhereToFindUs';
 import UpcomingEvents from './UpcomingEvents';
+import EventDetails from './EventDetails';
 
 class HomePageContent extends Component {
   render() {
@@ -13,7 +14,7 @@ class HomePageContent extends Component {
           <div className="container">
             <div className="row">
               <LatestSermon />
-              <div className="col-md-4"/>
+              <EventDetails />
               <WhereToFindUs />
               {/*<UpcomingEvents />*/}
             </div>
