@@ -5,6 +5,7 @@ import LatestSermon from './LatestSermon';
 import WhereToFindUs from './WhereToFindUs';
 import UpcomingEvents from './UpcomingEvents';
 import EventDetails from './EventDetails';
+import Register from './Register';
 
 class HomePageContent extends Component {
   render() {
@@ -13,7 +14,7 @@ class HomePageContent extends Component {
         <div className="content-2 bg-color-white text-color-default" >
           <div className="container">
             <div className="row">
-              <LatestSermon />
+              <Register />
               <EventDetails />
               <WhereToFindUs />
               {/*<UpcomingEvents />*/}
