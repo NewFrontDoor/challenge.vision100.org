@@ -17,8 +17,8 @@ class EventDetails extends Component {
               <p><strong>Dates</strong></p>
               <p>Friday 12th - Saturday 13th August 2022</p>
               <p><strong>Times</strong></p>
-              <p>Friday 1:30pm - 9:00pm</p>
-              <p>Saturday 8:30am - 6:00pm</p>
+              <p>Friday 1:30pm - 8:30pm</p>
+              <p>Saturday 8:30am - 5:30pm</p>
             </div>
           </div>
         </div>
