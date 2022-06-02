@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/bitter": "^4.5.7",
     "ajv": "^6.0.0",
     "es6-promise": "^4.2.5",
     "isomorphic-fetch": "^2.2.1",
