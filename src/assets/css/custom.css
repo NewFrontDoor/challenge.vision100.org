@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap");
+
 /*Fill latest sermon column with image*/
 .latestSermon-img {
 	width: 100% !important;
@@ -197,24 +199,27 @@ body{
 }
 
 .what-is-challenge {
-	background-color: #181818;
+	background-color: #e5e5e5;
 	padding: 50px 30px;
 	width: 100%;
 }
 
 .what-is-challenge > div {
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .what-is-challenge h2 {
-	font-family: "Bitter Black", sans-serif;
+	font-family: "Bitter", sans-serif;
+	font-weight: 900;
 	font-size: 3.2em;
 	margin-bottom: 20px;
+	line-height: 1.4;
 }
 
 .what-is-challenge p {
-	font-family: "'Bitter Medium', sans-serif";
+	font-family: "'Bitter', sans-serif";
+	font-weight: 500;
 	font-size: 1.7em;
 	line-height: 1.4;
 }
@@ -226,7 +231,7 @@ body{
 
 .event-information > div {
 	display: grid;
-	grid-template-columns: 0.4fr 0.7fr 1.6fr 1fr;
+	grid-template-columns: 0.5fr 0.7fr 1.6fr 1fr;
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -245,7 +250,8 @@ body{
 }
 
 .event-information__year {
-	font-family: "Bitter Black", sans-serif;
+	font-family: "Bitter", sans-serif;
+	font-weight: 900;
 	font-size: 4.5em;
 	margin-bottom: 20px;
 	writing-mode: vertical-rl;
@@ -256,11 +262,16 @@ body{
 }
 
 .event-information__time-location {
-	font-family: "Bitter Medium", sans-serif;
+	font-family: "Bitter", sans-serif;
+	font-weight: 500;
 	flex-direction: column;
 	gap: 20px;
 	flex-basis: 20%;
 	font-size: 1.5em;
+}
+
+.event-information__time-location span {
+	line-height: 1.3em;
 }
 
 .event-information__separator {
@@ -278,20 +289,23 @@ body{
 }
 
 .event-information__theme h2 {
-	font-family: "Bitter Black", sans-serif;
+	font-family: "Bitter", sans-serif;
+	font-weight: 900;
 	font-size: 3.3em;
 	margin-bottom: 20px;
 }
 
 .event-information__theme p {
-	font-family: "'Bitter Medium', sans-serif";
+	font-family: "Bitter", sans-serif;
+	font-weight: 500;
 	font-size: 2.4em;
 	line-height: 1.2;
 	margin: 0;
 }
 
 .event-information__theme span {
-	font-family: "Bitter Light", sans-serif;
+	font-family: "Bitter", sans-serif;
+	font-weight: 300;
 	font-size: 2.4em;
 	margin: 0 auto;
 }
@@ -310,7 +324,7 @@ body{
 	font-family: "Arial", sans-serif;
 	text-align: center;
 	border-radius: 15px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	padding: 18px 40px;
 	width: min(100%, 275px);
 	background: #c20000;
