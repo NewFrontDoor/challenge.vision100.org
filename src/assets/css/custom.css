@@ -218,7 +218,7 @@ body{
 }
 
 .what-is-challenge p {
-	font-family: "'Bitter', sans-serif";
+	font-family: "Bitter", sans-serif;
 	font-weight: 500;
 	font-size: 1.7em;
 	line-height: 1.4;
@@ -270,7 +270,8 @@ body{
 	font-size: 1.5em;
 }
 
-.event-information__time-location span {
+.event-information__time-location span,
+h2 {
 	line-height: 1.3em;
 }
 

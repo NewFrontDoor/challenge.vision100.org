@@ -28,17 +28,11 @@ class Register extends Component {
 					<div className="event-information__theme gradient-text">
 						<h2>Work</h2>
 						<p>
-							<strong>
-								<em>Work of</em>
-							</strong>{" "}
-							&nbsp;the Lord
+							<em>Work of</em> the Lord
 						</p>
 						<span>and</span>
 						<p>
-							<strong>
-								<em>Working for </em>
-							</strong>{" "}
-							&nbsp;the Lord
+							<em>Working for</em> the Lord
 						</p>
 					</div>
 					<div className="event-information__buttons">

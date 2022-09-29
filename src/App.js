@@ -30,8 +30,6 @@ import "./assets/nestor/css/color/red.css";
 import "./assets/css/custom.css";
 import "./assets/css/events.css";
 
-import "@fontsource/bitter";
-
 class App extends Component {
 	render() {
 		return (

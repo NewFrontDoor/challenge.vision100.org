@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import Navigation from "../Navigation";
 import Slider from "./Slider";
 import WhatIsChallenge from "./WhatIsChallenge";
-import Register from "./Register";
+//import Register from "./Register";
+import NoRegistration from "./NoRegistration";
 
 class HomePageWrapper extends Component {
 	render() {
@@ -14,7 +15,8 @@ class HomePageWrapper extends Component {
 				<div className="main-wrapper wide">
 					<Slider />
 					<WhatIsChallenge />
-					<Register />
+					{/* <Register /> */}
+					<NoRegistration />
 				</div>
 			</section>
 		);
