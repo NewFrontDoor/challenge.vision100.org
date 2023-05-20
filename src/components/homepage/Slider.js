@@ -55,7 +55,7 @@ class Slider extends Component {
 				return (
 					<li key={_.uniqueId()}>
 						<figure>
-							<a href="/EventDetails">
+							<a href="/Challenge2023">
 								<img
 									className="img-responsive img-full-width"
 									src={slide.src}

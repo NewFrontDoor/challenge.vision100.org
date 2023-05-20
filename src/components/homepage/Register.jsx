@@ -39,7 +39,7 @@ class Register extends Component {
 						<a href="https://brushfire.com/vision100/challenge/528718" rel="noreferrer noopener">
 							Register
 						</a>
-						<a href="/EventDetails">Event details</a>
+						<a href="/Challenge2023">Event details</a>
 					</div>
 				</div>
 			</section>

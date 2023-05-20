@@ -1,47 +1,48 @@
 /* eslint-disable */
-import React, { Component } from 'react';
+import React, { Component } from "react";
 //import logo from '../assets/img/logo.png';
-import NavLogo from '../assets/img/Challenge Nav Logo w date.svg';
+import NavLogo from "../assets/img/Challenge Nav Logo w date.svg";
 class Navigation extends Component {
-  render() {
-    return (
-      <header className="header-1 region-0 block-0">
-        <div className="container">
-          <div className="row">
+	render() {
+		return (
+			<header className="header-1 region-0 block-0">
+				<div className="container">
+					<div className="row">
+						<div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
+							<a href="/">
+								<img src={NavLogo} alt="Home" className="logo" />
+							</a>
+						</div>{" "}
+						{/* /logo-region */}
+						<div id="menu-region" className="col-xs-12 col-md-9">
+							<div className="region region-header">
+								<div className="block block-menu hidden-md hidden-lg">
+									<div className="content">
+										<nav className="navbar nestor-main-menu" role="navigation">
+											{/* Menu button for mobile display */}
+											<div className="navbar-header">
+												<button
+													type="button"
+													className="navbar-toggle"
+													data-toggle="collapse"
+													data-target=".nav-collapse"
+												>
+													MENU
+												</button>
+											</div>
+										</nav>
+									</div>
+								</div>
+								<div className="block block-tb-megamenu">
+									<div className="content">
+										<div className="tb-megamenu tb-megamenu-main-menu">
+											<div className="nav-collapse  always-show">
+												<ul className="tb-megamenu-nav nav level-0 items-5">
+													<li className="tb-megamenu-item level-1 mega">
+														<a href="/Challenge2023">Event Details</a>
+													</li>
 
-            <div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
-              <a href="/"><img src={NavLogo} alt="Home" className="logo" /></a>
-            </div> {/* /logo-region */}
-            <div id="menu-region" className="col-xs-12 col-md-9">
-              <div className="region region-header">
-
-                <div className="block block-menu hidden-md hidden-lg">
-
-
-                  <div className="content">
-
-                    <nav className="navbar nestor-main-menu" role="navigation">
-                      {/* Menu button for mobile display */}
-                      <div className="navbar-header">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">MENU</button>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-
-                <div className="block block-tb-megamenu">
-
-
-                  <div className="content">
-                    <div className="tb-megamenu tb-megamenu-main-menu">
-                      <div className="nav-collapse  always-show">
-                        <ul className="tb-megamenu-nav nav level-0 items-5">
-                          <li className="tb-megamenu-item level-1 mega">
-                            <a href="/EventDetails" >Event Details</a>
-                          </li>
-
-
-                          {/* 
+													{/* 
                           <li className="tb-megamenu-item level-1 mega dropdown">
                             <a href="javascript:void(0);" className="dropdown-toggle" title="Visit Us">
 
@@ -92,28 +93,33 @@ class Navigation extends Component {
                             </div>
                           </li>
                           */}
-                          {/*<li className="tb-megamenu-item level-1 mega">
+													{/*<li className="tb-megamenu-item level-1 mega">
                             <a href="https://vision100.brushfire.com/challenge/494592" rel="noopener noreferrer" target="_blank">Register Here</a>
                           </li>
                           <li className="tb-megamenu-item level-1 mega">
                             <a href="/Register" >Register</a>
                           </li>*/}
 
-                          <li className="tb-megamenu-item level-1 mega">
-                            <a href="/Contact" title="Contact Us">Contact Us</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>  </div>
-            </div> {/* /menu-region */}
-
-          </div> {/* /row */}
-        </div> {/* /container */}
-      </header>
-    );
-  }
+													<li className="tb-megamenu-item level-1 mega">
+														<a href="/Contact" title="Contact Us">
+															Contact Us
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>{" "}
+							</div>
+						</div>{" "}
+						{/* /menu-region */}
+					</div>{" "}
+					{/* /row */}
+				</div>{" "}
+				{/* /container */}
+			</header>
+		);
+	}
 }
 
 export default Navigation;
