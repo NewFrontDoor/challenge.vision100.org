@@ -7,6 +7,7 @@ import Slider from "./Slider";
 import WhatIsChallenge from "./WhatIsChallenge";
 //import Register from "./Register";
 import NoRegistration from "./NoRegistration";
+import LinksBlock from "./LinksBlock";
 
 class HomePageWrapper extends Component {
 	render() {
@@ -17,6 +18,7 @@ class HomePageWrapper extends Component {
 					<WhatIsChallenge />
 					{/* <Register /> */}
 					<NoRegistration />
+					<LinksBlock />
 				</div>
 			</section>
 		);

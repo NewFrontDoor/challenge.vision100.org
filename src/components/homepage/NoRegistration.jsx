@@ -59,6 +59,8 @@ const Seperator = styled.hr`
 	width: min(100%, 420px);
 `;
 
+const LinksBlock = styled.div``;
+
 class NoRegistration extends Component {
 	render() {
 		return (
@@ -68,7 +70,7 @@ class NoRegistration extends Component {
 					<Info className="gradient-text">
 						<span>Friday August 11 & Saturday August 12</span>
 						<Seperator />
-						<span>Simon Flinders</span>
+						<span>Simon Flinders and Sam Gough</span>
 					</Info>
 				</div>
 			</Container>
