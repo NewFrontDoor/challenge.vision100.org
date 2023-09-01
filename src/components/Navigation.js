@@ -39,7 +39,7 @@ class Navigation extends Component {
 											<div className="nav-collapse  always-show">
 												<ul className="tb-megamenu-nav nav level-0 items-5">
 													<li className="tb-megamenu-item level-1 mega">
-														<a href="/Challenge2023">Event Details</a>
+														<a href="/Challenge2024">Event Details</a>
 													</li>
 
 													{/* 

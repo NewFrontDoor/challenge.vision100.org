@@ -66,11 +66,11 @@ class NoRegistration extends Component {
 		return (
 			<Container>
 				<div>
-					<Year className="gradient-text">2023</Year>
+					<Year className="gradient-text">2024</Year>
 					<Info className="gradient-text">
-						<span>Friday August 11 & Saturday August 12</span>
+						<span>Friday August 9 & Saturday August 10</span>
 						<Seperator />
-						<span>Simon Flinders and Sam Gough</span>
+						<span>Murray Capill & Richard Condie</span>
 					</Info>
 				</div>
 			</Container>

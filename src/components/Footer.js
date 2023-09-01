@@ -11,7 +11,7 @@ class Footer extends Component {
           <div className="container">
             <div className="row">
 
-              <div id="footer-first-column-region" className="footer-first-column col-xs-12 col-md-4">
+              {/* <div id="footer-first-column-region" className="footer-first-column col-xs-12 col-md-4">
                 <div className="region region-footer-first-column">
 
                   <div className="block block-block">
@@ -23,9 +23,9 @@ class Footer extends Component {
                         <p><a href="https://goo.gl/maps/k6ujLwrrA47VGugK7">Wellspring Anglican Church</a><br />
                           43-47 Grosvenor St<br />
                           Sandy Bay, Tasmania 7005</p>
-                      </div> {/* /footer-address */}  </div>
+                      </div> </div>
                   </div>  </div>
-              </div> {/* /footer-first-column-region */}
+              </div> */}
 
               <div id="footer-second-column-region" className="footer-second-column col-xs-12 col-md-4">
                 <div className="region region-footer-second-column">
@@ -40,7 +40,7 @@ class Footer extends Component {
                       </div> {/* /footer-mail */}  </div>
                   </div>  </div>
               </div> {/* /footer-second-column-region */}
-
+              <div className="col-xs-12 col-md-4"/>
               <div id="footer-third-column-region" className="footer-third-column col-xs-12 col-md-4">
                 <div className="region region-footer-third-column">
 

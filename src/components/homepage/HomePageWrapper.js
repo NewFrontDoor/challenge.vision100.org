@@ -18,7 +18,7 @@ class HomePageWrapper extends Component {
 					<WhatIsChallenge />
 					{/* <Register /> */}
 					<NoRegistration />
-					<LinksBlock />
+					{/* <LinksBlock /> */}
 				</div>
 			</section>
 		);

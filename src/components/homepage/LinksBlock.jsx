@@ -24,10 +24,10 @@ const Container = styled.div`
 function LinksBlock() {
 	return (
 		<Container>
-			<a href="/challenge2023">
+			<a href="/challenge2024">
 				<span className="gradient-text">Register</span>
 			</a>
-			<a href="/challenge2023">
+			<a href="/challenge2024">
 				<span className="gradient-text">Find out more</span>
 			</a>
 		</Container>
