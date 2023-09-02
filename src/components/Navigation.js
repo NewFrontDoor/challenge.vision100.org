@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { Component } from "react";
 //import logo from '../assets/img/logo.png';
-import NavLogo from "../assets/img/Challenge Nav Logo w date.svg";
+import NavLogo from "../assets/img/Challenge Nav Logo 2024.svg";
 class Navigation extends Component {
 	render() {
 		return (
