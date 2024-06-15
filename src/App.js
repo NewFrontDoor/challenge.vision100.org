@@ -29,12 +29,23 @@ import "./assets/nestor/css/color/red.css";
 
 import "./assets/css/custom.css";
 import "./assets/css/events.css";
+import CountdownTimer from "./components/CountdownTimer";
 
 class App extends Component {
 	render() {
 		return (
 			<Router>
 				<div className="App">
+					<Route
+						path="*"
+						render={(props) => (
+							<CountdownTimer
+								targetDate="2024-08-09T13:30:00"
+								countdownPrefix="Challenge Conference 2024 begins in:"
+								registerLink={"https://mtsrecruit.com/taschallenge/"}
+							/>
+						)}
+					/>
 					<Route path="/:path" component={Navigation} />
 					<Route exact path="/" component={HomePageWrapper} />
 					<Route path="/:path" component={OtherPageWrapper} />

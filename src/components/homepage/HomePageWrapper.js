@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Slider from "./Slider";
 import WhatIsChallenge from "./WhatIsChallenge";
 //import Register from "./Register";
-import NoRegistration from "./NoRegistration";
+import RegistrationDetails from "./RegistrationDetails";
 import LinksBlock from "./LinksBlock";
 
 class HomePageWrapper extends Component {
@@ -16,8 +16,7 @@ class HomePageWrapper extends Component {
 				<div className="main-wrapper wide">
 					<Slider />
 					<WhatIsChallenge />
-					{/* <Register /> */}
-					<NoRegistration />
+					<RegistrationDetails />
 					{/* <LinksBlock /> */}
 				</div>
 			</section>

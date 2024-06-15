@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from "react";
 import _ from "lodash";
 
@@ -38,7 +37,7 @@ class Slider extends Component {
 				return (
 					<li key={_.uniqueId()}>
 						<figure>
-							<img className="img-responsive img-full-width" src={slide.src} width="1440" height="600" />
+							<img className="img-responsive img-full-width" src={slide.src} width="1440" height="600" alt="" />
 							<figcaption className="overlay overlay-30 text-center">
 								<div className="highlighted-slider-2-content">
 									<h1 className="slider-title">{slide.caption.header}</h1>
@@ -55,7 +54,7 @@ class Slider extends Component {
 				return (
 					<li key={_.uniqueId()}>
 						<figure>
-							<a href="/Challenge2024">
+							<a href="https://mtsrecruit.com/taschallenge/">
 								<img
 									className="img-responsive img-full-width"
 									src={slide.src}

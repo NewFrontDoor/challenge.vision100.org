@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { Component } from "react";
 import styled from "styled-components";
+import LinksBlock from "./LinksBlock";
 
 const Container = styled.section`
 	background-color: #222222;
@@ -58,9 +59,6 @@ const Seperator = styled.hr`
 	border: 1px solid #c20000;
 	width: min(100%, 420px);
 `;
-
-const LinksBlock = styled.div``;
-
 class NoRegistration extends Component {
 	render() {
 		return (
@@ -72,6 +70,13 @@ class NoRegistration extends Component {
 						<Seperator />
 						<span>Murray Capill & Richard Condie</span>
 					</Info>
+				</div>
+				<div className="event-information__buttons">
+					<LinksBlock
+						registrationLink="https://mtsrecruit.com/taschallenge/"
+						moreInfoLink="https://mtsrecruit.com/wp-content/uploads/2024/05/TAS-Challenge-2024-Conference-Information.pdf"
+						isBlank={true}
+					/>
 				</div>
 			</Container>
 		);

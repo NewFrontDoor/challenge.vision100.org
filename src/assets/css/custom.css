@@ -326,8 +326,8 @@ h2 {
 	text-align: center;
 	border-radius: 15px;
 	margin-bottom: 60px;
-	padding: 18px 40px;
-	width: min(100%, 275px);
+	padding: 16px 40px;
+	width: min(100%, 300px);
 	background: #c20000;
 	background-image: linear-gradient(
 		to right bottom,
