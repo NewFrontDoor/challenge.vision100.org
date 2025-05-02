@@ -24,9 +24,10 @@ import React from "react";
 function LinksBlock({ registrationLink, moreInfoLink, isBlank = true }) {
 	const target = isBlank ? "_blank" : "";
 	return (
-		<div className="event-information__buttons">
+		<div className="event-information__buttons w-full">
+			
 			<a href={registrationLink} target={target} rel="noopener noreferrer">
-				<span>Register</span>
+				<span>Registration and more information coming soon!</span>
 			</a>
 			<a href={moreInfoLink} target={target} rel="noopener noreferrer">
 				<span>Find out more</span>

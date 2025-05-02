@@ -40,8 +40,8 @@ class App extends Component {
 						path="*"
 						render={(props) => (
 							<CountdownTimer
-								targetDate="2024-08-09T13:30:00"
-								countdownPrefix="Challenge Conference 2024 begins in:"
+								targetDate="2025-08-09T13:30:00"
+								countdownPrefix="Challenge Conference 2025 begins in:"
 								registerLink={"https://mtsrecruit.com/taschallenge/"}
 							/>
 						)}

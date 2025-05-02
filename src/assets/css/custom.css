@@ -327,7 +327,7 @@ h2 {
 	border-radius: 15px;
 	margin-bottom: 60px;
 	padding: 16px 40px;
-	width: min(100%, 300px);
+	width: min(100%, 400px);
 	background: #c20000;
 	background-image: linear-gradient(
 		to right bottom,
