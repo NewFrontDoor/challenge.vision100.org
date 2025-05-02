@@ -52,7 +52,7 @@ class CountdownTimer extends Component {
 				&nbsp;&nbsp;
 				<span className="gradient-text" style={styles.text}>
 					<a href={this.props.registerLink} rel="noreferrer noopener">
-						Register →
+					Registration coming soon →
 					</a>
 				</span>
 			</div>
