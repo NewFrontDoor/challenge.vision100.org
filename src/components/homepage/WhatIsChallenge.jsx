@@ -11,8 +11,9 @@ function WhatIsChallenge() {
 					workers for Tasmania and beyond. Challenge is the place of <em>refreshment</em>, <em>encouragement</em> and{" "}
 					<em>inspiration</em> for all of us who are faithfully serving in our local churches or Christian organisations
 					to keep going and keep growing in our various ministries.{" "} */}
-					Challenge is a place of refreshment, equipping and camaraderie for all who lead and service in our local churches and Christian organisations. 
-					Challenge provides the encouragement and invitation to start a journey of exploring gospel work and to take steps toward being the next formal ministry and mission workers for Tasmania and beyond.
+					120 + leaders, from across generations and denominations will be gathering from 8 - 9 August 2025 at The Lantern Centre, Kingston.
+						<br /><br />
+					We meet to encourage each other in raising up , nourishing and multiplying leaders that faithfully and courageously seek to see churches across Tasmania moving forward in serving the gospel.
 				</p>
 			</div>
 		</section>
