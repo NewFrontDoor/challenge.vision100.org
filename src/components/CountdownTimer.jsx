@@ -50,11 +50,13 @@ class CountdownTimer extends Component {
 					{this.props.countdownPrefix} {days}d {hours}h {minutes}m {seconds}s
 				</span>
 				&nbsp;&nbsp;
+
 				<span className="gradient-text" style={styles.text}>
-					<a rel="noreferrer noopener">
-					Registration coming soon →
+					<a href="https://allforthekingdom.org/rego/tasmania/" rel="noreferrer noopener" target="_blank">
+					Registration now open! →
 					</a>
 				</span>
+
 			</div>
 		);
 	}
