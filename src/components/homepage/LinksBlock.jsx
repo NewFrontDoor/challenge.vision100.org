@@ -29,7 +29,7 @@ function LinksBlock({ registrationLink, moreInfoLink, isBlank = true }) {
 			<a  rel="noopener noreferrer" href="https://allforthekingdom.org/rego/tasmania/" target="_blank">
 				<span>Registration now open!</span>
 			</a>
-			<a  rel="noopener noreferrer" href="https://allforthekingdom.org/wp-content/uploads/2025/06/Challenge-2025-Website-Version-06.06.25.pdf" target="_blank">
+			<a href="/pdf/Website Information 2025 Website Version 180625.pdf" target="_blank">
 				<span>Find out more</span>
 			</a>
 		</div>
