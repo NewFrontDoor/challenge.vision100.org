@@ -22,14 +22,14 @@ import React from "react";
 // `;
 
 function LinksBlock({ registrationLink, moreInfoLink, isBlank = true }) {
-	const target = isBlank ? "_blank" : "";
+
 	return (
 		<div className="event-information__buttons">
 			
 			<a  rel="noopener noreferrer" href="https://allforthekingdom.org/rego/tasmania/" target="_blank">
 				<span>Registration now open!</span>
 			</a>
-			<a href="/pdf/Website Information 2025 Website Version 180625.pdf" target="_blank">
+			<a href="https://allforthekingdom.org/wp-content/uploads/2025/06/TAS-Challenge-2025-Website-Version-180625-compressed.pdf" target="_blank">
 				<span>Find out more</span>
 			</a>
 		</div>
